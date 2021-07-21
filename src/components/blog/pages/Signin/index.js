@@ -13,6 +13,7 @@ import useStyles from "./styles";
 import Container from "@material-ui/core/Container";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 export default function Signin({ setAuth }) {
     const classes = useStyles();
@@ -34,8 +35,13 @@ export default function Signin({ setAuth }) {
         console.log(user);
     };
 
+    const title = "Đăng nhập";
+
     return (
         <Container component="main" maxWidth="xs">
+            <Helmet>
+                <title>{title}</title>
+            </Helmet>
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
