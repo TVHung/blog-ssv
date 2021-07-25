@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import useStyles from "./styles";
-import { Helmet } from "react-helmet";
 
 export default function Error() {
     const classes = useStyles();
     const title = "Lỗi";
+
+    useEffect(() => {
+        document.title = title;
+    }, []);
+
     return (
         <>
-            <Helmet>
-                <title>{title}</title>
-            </Helmet>
             <p>Trang error</p>
         </>
     );

@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useStyles from "./styles";
-import { Helmet } from "react-helmet";
 import Container from "@material-ui/core/Container";
 import { Grid } from "@material-ui/core";
 
 export default function Home() {
     const classes = useStyles();
     const title = "Trang chủ";
+
+    useEffect(() => {
+        document.title = title;
+    }, []);
+
     return (
         <>
-            <Helmet>
-                <title>{title}</title>
-            </Helmet>
             <Container>
                 <div className={classes.paper}>
                     <Grid container>
