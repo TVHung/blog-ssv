@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -13,7 +13,6 @@ import useStyles from "./styles";
 import Container from "@material-ui/core/Container";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Helmet } from "react-helmet";
 
 export default function Signin({ setAuth }) {
     const classes = useStyles();
@@ -37,11 +36,12 @@ export default function Signin({ setAuth }) {
 
     const title = "Đăng nhập";
 
+    useEffect(() => {
+        document.title = title;
+    }, []);
+
     return (
         <Container component="main" maxWidth="xs">
-            <Helmet>
-                <title>{title}</title>
-            </Helmet>
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
