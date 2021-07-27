@@ -10,6 +10,7 @@ export default makeStyles((theme) => ({
         alignItems: "center",
         justify: "center",
         opacity: 0.9,
+        zIndex: 3,
     },
 
     gridContainer: {
@@ -38,7 +39,7 @@ export default makeStyles((theme) => ({
     },
 
     ul: {
-        padding: 0,
+        padding: 30,
         margin: 0,
         height: "100%",
         position: "absolute",

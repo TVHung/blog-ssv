@@ -5,6 +5,7 @@ export default makeStyles((theme) => ({
         width: "100%",
         height: 130,
         backgroundColor: "#192122",
+        zIndex: 3,
     },
 
     author: {

@@ -8,7 +8,7 @@ export default function ListView({ lists }) {
             <Grid container spacing={3} alignItems="stretch">
                 {lists.map((list) => (
                     <Grid key={list.id} item xs={6} md={4}>
-                        <Item game={list} />
+                        <Item list={list} />
                     </Grid>
                 ))}
             </Grid>
