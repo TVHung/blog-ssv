@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
         transition: "all .2s ease-in-out",
         borderRadius: 5,
         boxShadow: "0 1px 3px 2px rgba(0, 0, 0, .3)",
+        zIndex: 1,
         "&:hover": {
             cursor: "pointer",
             transform: "scale(1.1)",
