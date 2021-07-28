@@ -23,7 +23,9 @@ export default function CardMember({ data }) {
                     </div>
                 </Grid>
                 <Grid item xs={8} className={classes.inforContainer}>
-                    <h2 className={classes.name}>{data.name}</h2>
+                    <h2 className={classes.name}>
+                        <b>{data.name}</b>
+                    </h2>
                     <h4 className={classes.work}>{data.work}</h4>
                     <div className={classes.social}>
                         {data.facebookLink != "" ? (
@@ -60,7 +62,9 @@ export default function CardMember({ data }) {
                         ) : null}
                     </div>
                     <hr style={{ marginRight: 20 }} />
-                    <p>{data.bio}</p>
+                    <p className={classes.bio}>
+                        <b>{data.bio}</b>
+                    </p>
                 </Grid>
             </Grid>
         </div>

@@ -34,6 +34,10 @@ export default makeStyles((theme) => ({
         color: "#286fe0",
     },
 
+    bio: {
+        marginRight: 10,
+    },
+
     socialIcon: {
         marginRight: 10,
         transition: "all .1s ease-in-out",

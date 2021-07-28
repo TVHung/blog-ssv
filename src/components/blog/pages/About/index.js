@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import useStyles from "./styles";
 import Container from "@material-ui/core/Container";
 import CardMember from "../../components/CardMember";
+import SlideShow from "../../components/SlideShow";
 
 export default function About() {
     const classes = useStyles();
@@ -72,7 +73,7 @@ export default function About() {
     return (
         <div className={classes.container}>
             <Container>
-                <div className={classes.aboutTeam}>
+                {/* <div className={classes.aboutTeam}>
                     <div className={classes.titleAbout}>
                         <h1 className={classes.titleTeam}>
                             <b>WE ARE TEAM SSV</b>
@@ -84,15 +85,16 @@ export default function About() {
                             </b>
                         </h2>
                     </div>
-                </div>
+                </div> */}
+                <SlideShow />
                 <Grid container spacing={2} className={classes.about}>
-                    <Grid item xs={12} md={6} className={classes.aboutItem}>
+                    <Grid item xs={12} md={4} className={classes.aboutItem}>
                         <CardMember data={data[0]} />
                     </Grid>
-                    <Grid item xs={12} md={6} className={classes.aboutItem}>
+                    <Grid item xs={12} md={4} className={classes.aboutItem}>
                         <CardMember data={data[1]} />
                     </Grid>
-                    <Grid item xs={12} md={6} className={classes.aboutItem}>
+                    <Grid item xs={12} md={4} className={classes.aboutItem}>
                         <CardMember data={data[2]} />
                     </Grid>
                     <Grid item xs={12} md={6} className={classes.aboutItem}>
