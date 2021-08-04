@@ -1,8 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
+    container: {},
+
     slideContainer: {
         width: "70%",
+        height: "100%",
         margin: "auto",
     },
 
