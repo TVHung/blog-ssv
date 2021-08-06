@@ -19,7 +19,7 @@ export default function Item({ list }) {
 
     const onPostDetail = () => {};
 
-    const linkId = "/play-game/" + list.id;
+    const linkId = "/detail/" + list.id;
 
     return (
         <Link to={linkId} style={{ textDecoration: "none" }}>
