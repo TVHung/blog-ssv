@@ -36,7 +36,6 @@ export default makeStyles((theme) => ({
 
     bio: {
         marginRight: 10,
-        quotes: "auto",
     },
 
     socialIcon: {

@@ -2,15 +2,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
     container: {
-        height: 600,
+        minHeight: 600,
     },
 
-    content: {
-        backgroundColor: "blue",
-        height: 600,
-    },
+    content: {},
 
-    aboutTeam: {
-        backgroundColor: "green",
-    },
+    aboutTeam: {},
 }));

@@ -109,11 +109,11 @@ export default function Home() {
                 <div>
                     <SlideShow dataSlides={dataSlides} />
                 </div>
-                <div>
-                    <ListTheme listTheme={listTheme} />
-                </div>
                 <div className={classes.paper}>
                     <ListView lists={lists} />
+                </div>
+                <div>
+                    <ListTheme listTheme={listTheme} />
                 </div>
             </Container>
         </>
