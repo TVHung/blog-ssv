@@ -12,6 +12,7 @@ import { Fragment } from "react";
 import Review from "./components/blog/pages/Review";
 import Navbar from "./components/blog/components/Navbar";
 import Footer from "./components/blog/components/Footer";
+import PostDetail from "./components/blog/pages/PostDetail";
 
 toast.configure();
 
