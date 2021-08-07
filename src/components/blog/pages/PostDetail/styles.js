@@ -6,13 +6,10 @@ export default makeStyles((theme) => ({
     },
 
     content: {
-        backgroundColor: "red",
         width: "100%",
-        height: 600,
     },
 
     intro_suggest: {
-        backgroundColor: "green",
         width: "100%",
         height: 600,
     },
