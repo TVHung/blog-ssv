@@ -6,7 +6,13 @@ export default makeStyles((theme) => ({
     },
 
     imgTeam: {
-        width: 320,
-        height: 180,
+        width: "100%",
+        paddingBottom: "10",
+    },
+
+    nameTeam: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
     },
 }));
