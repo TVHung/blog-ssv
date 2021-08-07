@@ -4,6 +4,7 @@ import Signup from "./components/blog/pages/Signup";
 import Home from "./components/blog/pages/Home";
 import About from "./components/blog/pages/About";
 import Error from "./components/blog/pages/Error";
+import Detail from "./components/blog/pages/Detail";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
                     <Route exact path="/register" component={Signup} />
                     <Route exact path="/review" component={Review} />
                     <Route exact path="/about" component={About} />
+                    <Route exact path="/detail/:id" component={Detail} />
                     <Route path="/:someString" component={Error} />
                 </Switch>
                 <Footer />
