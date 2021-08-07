@@ -27,7 +27,7 @@ function App() {
                     <Route exact path="/register" component={Signup} />
                     <Route exact path="/review" component={Review} />
                     <Route exact path="/about" component={About} />
-                    <Route path="/detail/:id" component={PostDetail} />
+                    <Route path="/detail/:id" component={Detail} />
                     <Route path="/:someString" component={Error} />
                 </Switch>
                 <Footer />
