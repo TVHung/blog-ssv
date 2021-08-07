@@ -62,8 +62,10 @@ export default function CardMember({ data }) {
                         ) : null}
                     </div>
                     <hr style={{ marginRight: 20 }} />
-                    <p className={classes.bio}>
-                        <b>{data.bio}</b>
+                    <p className={classes.bio} style={{}}>
+                        <i>
+                            <b>"{data.bio}"</b>
+                        </i>
                     </p>
                 </Grid>
             </Grid>

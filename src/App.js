@@ -4,6 +4,7 @@ import Signup from "./components/blog/pages/Signup";
 import Home from "./components/blog/pages/Home";
 import About from "./components/blog/pages/About";
 import Error from "./components/blog/pages/Error";
+import Detail from "./components/blog/pages/Detail";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
