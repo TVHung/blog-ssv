@@ -64,16 +64,19 @@ export default function Home() {
 
     const dataSlides = [
         {
+            id: 1,
             tite: "We are team ssv",
             bio: "Blog chia sẻ về những thông tin của nhóm và những kiến thức bổ ích khác",
             image: "https://monkeymedia.com.vn/storage/2020/06/757b505cfd34c64c85ca5b5690ee5293/c/16a17bdd79859ddbc494.jpg-large.jpg",
         },
         {
+            id: 2,
             tite: "We are team ssv",
             bio: "Blog chia sẻ về những thông tin của nhóm và những kiến thức bổ ích khác",
             image: "https://cn24h.net/uploads/img_nd/dinh-dang-anh-tiff-la-gi-1.jpg",
         },
         {
+            id: 3,
             tite: "We are team ssv",
             bio: "Blog chia sẻ về những thông tin của nhóm và những kiến thức bổ ích khác",
             image: "http://cdn2.tieudungplus.vn/upload/TgBSumXIHarRW68IEfydSA/files/bst-hinh-anh-phong-canh-thien-nhien-tuyet-dep-lang-man-tho-mong-hung-vi-nhat-the-gioi-1.jpeg",

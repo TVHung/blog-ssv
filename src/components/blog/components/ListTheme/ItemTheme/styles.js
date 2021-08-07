@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        transition: "all .2s ease-out",
+        transition: "all .4s ease-out",
         maxWidth: "100%",
         zIndex: 1,
         "&:hover": {

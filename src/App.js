@@ -12,6 +12,7 @@ import { Fragment } from "react";
 import Review from "./components/blog/pages/Review";
 import Navbar from "./components/blog/components/Navbar";
 import Footer from "./components/blog/components/Footer";
+import PostDetail from "./components/blog/pages/PostDetail";
 
 toast.configure();
 
@@ -26,7 +27,7 @@ function App() {
                     <Route exact path="/register" component={Signup} />
                     <Route exact path="/review" component={Review} />
                     <Route exact path="/about" component={About} />
-                    <Route exact path="/detail/:id" component={Detail} />
+                    <Route path="/detail/:id" component={PostDetail} />
                     <Route path="/:someString" component={Error} />
                 </Switch>
                 <Footer />
