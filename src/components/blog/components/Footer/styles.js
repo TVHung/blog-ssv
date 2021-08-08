@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
         height: 130,
         backgroundColor: "#192122",
         zIndex: 3,
+        marginTop: 20,
     },
 
     author: {
@@ -31,6 +32,9 @@ export default makeStyles((theme) => ({
         textAlign: "center",
         paddingLeft: 20,
         paddingRight: 20,
+        "&:hover": {
+            color: "coral",
+        },
     },
 
     a: {
