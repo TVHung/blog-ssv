@@ -5,6 +5,7 @@ import { Grid } from "@material-ui/core";
 import ListView from "../../components/ListView";
 import SlideShow from "../../components/SlideShow";
 import ListTheme from "../../components/ListTheme";
+import PostVideo from "../../components/PostVideo";
 
 export default function Home() {
     const classes = useStyles();
@@ -53,42 +54,12 @@ export default function Home() {
         {
             id: "8",
             title: "hoc lap trinh trong 1 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png",
+            image: "http://cdn2.tieudungplus.vn/upload/TgBSumXIHarRW68IEfydSA/files/bst-hinh-anh-phong-canh-thien-nhien-tuyet-dep-lang-man-tho-mong-hung-vi-nhat-the-gioi-1.jpeg",
         },
         {
             id: "9",
             title: "lam chu tieng nhat trong 300000000000 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/monarch.png",
-        },
-        {
-            id: "10",
-            title: "Hung huong dan choi rubik",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/monarch.png",
-        },
-        {
-            id: "11",
-            title: "hoc lap trinh trong 1 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png",
-        },
-        {
-            id: "12",
-            title: "lam chu tieng nhat trong 300000000000 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/monarch.png",
-        },
-        {
-            id: "13",
-            title: "Hung huong dan choi rubik",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/monarch.png",
-        },
-        {
-            id: "14",
-            title: "hoc lap trinh trong 1 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png",
-        },
-        {
-            id: "15",
-            title: "lam chu tieng nhat trong 300000000000 ngay",
-            image: "https://homepages.cae.wisc.edu/~ece533/images/monarch.png",
+            image: "https://cn24h.net/uploads/img_nd/dinh-dang-anh-tiff-la-gi-1.jpg",
         },
     ];
 
@@ -141,6 +112,9 @@ export default function Home() {
             <Container className={classes.container}>
                 <div>
                     <SlideShow dataSlides={dataSlides} />
+                </div>
+                <div>
+                    <PostVideo />
                 </div>
                 <div>
                     <ListTheme listTheme={listTheme} />
