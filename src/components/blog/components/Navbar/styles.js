@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
         alignItems: "center",
         justify: "center",
         opacity: 0.9,
-        zIndex: 3,
+        zIndex: 5,
     },
 
     gridContainer: {
