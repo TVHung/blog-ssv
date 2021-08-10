@@ -14,23 +14,37 @@ export default makeStyles((theme) => ({
         maxWidth: "100%",
         zIndex: 1,
         margin: 3,
+        boxShadow: "inset 0em -2em 2em rgba(0, 0, 0, 0.5)",
         "&:hover": {
             cursor: "pointer",
-            boxShadow: "inset 0em -4em 2em rgba(0, 0, 0, 0.5)",
+            boxShadow: "inset 0em -6em 2em rgba(0, 0, 0, 0.5)",
         },
     },
 
     inlineImage: {
         width: "100%",
-        height: 250,
+        height: 300,
         zIndex: 2,
-        // display: "flex",
-        // alignItems: "center",
-        // justifyContent: "left",
+        position: "relative",
     },
 
     titleTeam: {
         fontSize: 20,
+        color: "white",
+        position: "absolute",
+        paddingLeft: 20,
+        paddingRight: 20,
+        bottom: 0,
+        left: 0,
+        maxWidth: "100%",
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        display: "inline-block",
+    },
+
+    time: {
+        fontSize: 15,
         color: "white",
     },
 }));

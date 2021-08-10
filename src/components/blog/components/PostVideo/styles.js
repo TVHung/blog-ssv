@@ -5,5 +5,6 @@ export default makeStyles((theme) => ({
         width: "100%",
         zIndex: 1,
         minHeight: 500,
+        paddingBottom: 10,
     },
 }));

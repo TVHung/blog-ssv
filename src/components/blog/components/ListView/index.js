@@ -4,10 +4,10 @@ import Item from "./Item";
 
 export default function ListView({ lists }) {
     return (
-        <div style={{ paddingTop: 10 }}>
+        <div style={{ paddingTop: 10, width: "100%" }}>
             <Grid container spacing={3} alignItems="stretch">
                 {lists.map((list) => (
-                    <Grid key={list.id} item xs={6} md={4}>
+                    <Grid key={list.id} item xs={6}>
                         <Item list={list} />
                     </Grid>
                 ))}

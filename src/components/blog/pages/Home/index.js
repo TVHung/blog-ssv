@@ -6,6 +6,7 @@ import ListView from "../../components/ListView";
 import SlideShow from "../../components/SlideShow";
 import ListTheme from "../../components/ListTheme";
 import PostVideo from "../../components/PostVideo";
+import IntroTeam from "../../components/IntroTeam";
 
 export default function Home() {
     const classes = useStyles();
@@ -108,21 +109,27 @@ export default function Home() {
     ];
 
     return (
-        <>
-            <Container className={classes.container}>
-                <div>
-                    <SlideShow dataSlides={dataSlides} />
-                </div>
-                <div>
-                    <PostVideo />
-                </div>
-                <div>
-                    <ListTheme listTheme={listTheme} />
-                </div>
-                <div className={classes.paper}>
-                    <ListView lists={lists} />
-                </div>
-            </Container>
-        </>
+        <Container className={classes.container}>
+            <div>
+                <SlideShow dataSlides={dataSlides} />
+            </div>
+            <div>
+                <PostVideo />
+            </div>
+            <div>
+                <ListTheme listTheme={listTheme} />
+            </div>
+
+            <Grid container>
+                <Grid item xs={12} md={8}>
+                    <div className={classes.paper}>
+                        <ListView lists={lists} />
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <IntroTeam />
+                </Grid>
+            </Grid>
+        </Container>
     );
 }
