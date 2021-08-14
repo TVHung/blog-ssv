@@ -1,10 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-
-    container: {
-        
-    },
+    container: {},
 
     paper: {
         marginTop: theme.spacing(2),
@@ -13,17 +10,5 @@ export default makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         width: "100%",
-    },
-
-    itemHome: {
-        width: "100%",
-        height: 300,
-        backgroundColor: "green",
-    },
-
-    itemHome2: {
-        width: "100%",
-        height: 300,
-        backgroundColor: "blue",
     },
 }));

@@ -6,6 +6,7 @@ import ListView from "../../components/ListView";
 import SlideShow from "../../components/SlideShow";
 import ListTheme from "../../components/ListTheme";
 import PostVideo from "../../components/PostVideo";
+import IntroTeam from "../../components/IntroTeam";
 
 export default function Home() {
     const classes = useStyles();
@@ -18,17 +19,17 @@ export default function Home() {
     const lists = [
         {
             id: "1",
-            title: "Game Knowledge War",
+            title: "DU LỊCH NINH BÌNH #1 – Chưa đi chưa biết Tràng An đi rồi mới biết ko hề gian nan, còn đẹp như tranh !",
             image: "https://cn24h.net/uploads/img_nd/dinh-dang-anh-tiff-la-gi-1.jpg",
         },
         {
             id: "2",
-            title: "Game Rocket",
+            title: "DU LỊCH NINH BÌNH #1 – Chưa đi chưa biết Tràng An đi rồi mới biết ko hề gian nan, còn đẹp như tranh !",
             image: "http://cdn2.tieudungplus.vn/upload/TgBSumXIHarRW68IEfydSA/files/bst-hinh-anh-phong-canh-thien-nhien-tuyet-dep-lang-man-tho-mong-hung-vi-nhat-the-gioi-1.jpeg",
         },
         {
             id: "3",
-            title: "Game luyện chính tả",
+            title: "DU LỊCH NINH BÌNH #1 – Chưa đi chưa biết Tràng An đi rồi mới biết ko hề gian nan, còn đẹp như tranh !",
             image: "https://cn24h.net/uploads/img_nd/dinh-dang-anh-tiff-la-gi-1.jpg",
         },
         {
@@ -38,12 +39,12 @@ export default function Home() {
         },
         {
             id: "5",
-            title: "sinh vien lam 5 trieu 1 ngay",
+            title: "DU LỊCH NINH BÌNH #1 – Chưa đi chưa biết Tràng An đi rồi mới biết ko hề gian nan, còn đẹp như tranh !",
             image: "https://cn24h.net/uploads/img_nd/dinh-dang-anh-tiff-la-gi-1.jpg",
         },
         {
             id: "6",
-            title: "hung day",
+            title: "DU LỊCH NINH BÌNH #1 – Chưa đi chưa biết Tràng An đi rồi mới biết ko hề gian nan, còn đẹp như tranh !",
             image: "http://cdn2.tieudungplus.vn/upload/TgBSumXIHarRW68IEfydSA/files/bst-hinh-anh-phong-canh-thien-nhien-tuyet-dep-lang-man-tho-mong-hung-vi-nhat-the-gioi-1.jpeg",
         },
         {
@@ -108,21 +109,27 @@ export default function Home() {
     ];
 
     return (
-        <>
-            <Container className={classes.container}>
-                <div>
-                    <SlideShow dataSlides={dataSlides} />
-                </div>
-                <div>
-                    <PostVideo />
-                </div>
-                <div>
-                    <ListTheme listTheme={listTheme} />
-                </div>
-                <div className={classes.paper}>
-                    <ListView lists={lists} />
-                </div>
-            </Container>
-        </>
+        <Container className={classes.container}>
+            <div>
+                <SlideShow dataSlides={dataSlides} />
+            </div>
+            <div>
+                <PostVideo />
+            </div>
+            <div>
+                <ListTheme listTheme={listTheme} />
+            </div>
+
+            <Grid container>
+                <Grid item xs={12} md={8}>
+                    <div className={classes.paper}>
+                        <ListView lists={lists} />
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <IntroTeam />
+                </Grid>
+            </Grid>
+        </Container>
     );
 }
