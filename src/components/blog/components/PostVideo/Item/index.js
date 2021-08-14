@@ -21,7 +21,7 @@ export default function ItemTheme({ item }) {
                         <h2 className={classes.titleTeam}>
                             Đây là chuyến đi phượt về Nam Định, quê của giáo sư
                             Mai Ngọc Khang
-                            <h3 className={classes.time}>20/06/2020</h3>
+                            <p className={classes.time}>20/06/2020</p>
                         </h2>
                     </div>
                 </div>

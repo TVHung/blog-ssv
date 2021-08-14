@@ -1,29 +1,62 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-    card: {
-        backgroundColor: "white",
-        transition: "all .2s ease-in-out",
-        borderRadius: 5,
-        boxShadow: "0 1px 3px 2px rgba(0, 0, 0, .3)",
-        zIndex: 1,
-        "&:hover": {
-            cursor: "pointer",
-            transform: "scale(1.1)",
-            boxShadow: "0 5px 10px 3px rgba(0, 0, 0, .3)",
-        },
+    container: {
+        width: "100%",
     },
-    media: {
-        height: 0,
-        paddingTop: "56.25%", // 16:9,
-        marginTop: "30",
+
+    img: {
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingBottom: 10,
     },
-    header: {
-        fontSize: 20,
+
+    imgTeam: {
+        width: "100%",
     },
 
     content: {
-        // height: 50,
-        color: "black",
+        padding: 10,
+    },
+
+    containerContent: {
+        width: "100%",
+        padding: 10,
+    },
+
+    category: {
+        padding: 0,
+        margin: 0,
+        fontWeight: "bold",
+        color: "coral",
+        textTransform: "uppercase",
+        fontSize: 18,
+    },
+
+    title: {
+        textTransform: "uppercase",
+        fontSize: 16,
+        "&:hover": {
+            cursor: "pointer",
+            color: "grey",
+        },
+        color: "#000",
+        fontWeight: "bold",
+    },
+
+    byAndTime: {
+        color: "#000",
+    },
+
+    chisaiContent: {
+        color: "#000",
+        fontSize: 18,
+        maxWidth: "100%",
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        display: "inline-block",
+        lineHeight: "20px",
+        height: "40px",
     },
 }));
